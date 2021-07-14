@@ -2,3 +2,12 @@
     width: 100vw;
     margin: 0;
 }
+
+.L_ul .content1 {
+    margin-top: 0;
+}
+
+.text1 {
+    overflow-x: initial;
+    width: auto;
+}

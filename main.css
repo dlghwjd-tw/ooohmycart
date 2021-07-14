@@ -4,6 +4,10 @@
     background: #fdf2c7;
 }
 
+[src='https://img1.shop2000.com.tw/pattern/226165/1.gif'] {
+    display: none;
+}
+
 [style='background:url(https://img1.shop2000.com.tw/pattern/226165/22.gif);background-repeat: repeat-x;width:95%'] {
     display: none;
 }

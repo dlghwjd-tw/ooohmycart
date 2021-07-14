@@ -19,8 +19,11 @@ if (webStatus == 'underMaintenance') {
 var homeBtnEle = document.querySelector('[onclick="bt_onclick(\'/ooohmycarthk/home\',\'sub23\');"]')
 var homeBtnReplacement = document.createElement('div')
 homeBtnReplacement.innerHTML = '首頁'
-homeBtnReplacement.style.fontSize = '30px'
+homeBtnReplacement.style.fontSize = '24px'
 homeBtnReplacement.style.cursor = 'pointer'
+homeBtnReplacement.style.margin = '0 10px 0 230px'
+homeBtnReplacement.style.padding = '3px'
+homeBtnReplacement.style.border = '3px solid'
+homeBtnReplacement.style.borderRadius = '10px'
 homeBtnReplacement.onclick = 'bt_onclick(\'/ooohmycarthk/home\',\'sub23\');'
 homeBtnEle.parentNode.append(homeBtnReplacement)
-homeBtnEle.parentNode.removeChild(homeBtnEle)

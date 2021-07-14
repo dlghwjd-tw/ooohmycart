@@ -15,9 +15,9 @@ if (webStatus == 'underMaintenance') {
 
 // Adjust menu buttons
 var homeBtnEle = document.querySelector('[onclick="bt_onclick(\'/ooohmycarthk/home\',\'sub23\');"]')
-homeBtnEle.parentNode.removeChild(homeBtnEle)
 var homeBtnReplacement = document.createElement('div')
 homeBtnReplacement.innerHTML = '首頁'
 homeBtnReplacement.style.cursor = 'pointer'
 homeBtnReplacement.onclick = 'bt_onclick(\'/ooohmycarthk/home\',\'sub23\');'
 homeBtnEle.parentNode.append(homeBtnReplacement)
+homeBtnEle.parentNode.removeChild(homeBtnEle)

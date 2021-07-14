@@ -1,5 +1,5 @@
 var bodyEle = document.body
-var webStatus
+var webStatus = 'underMaintenance'
 
 // Maintenance Screen
 if (webStatus == 'underMaintenance') {
@@ -15,6 +15,7 @@ if (webStatus == 'underMaintenance') {
 
 // Adjust menu buttons
 var homeBtnEle = document.querySelector('[onclick="bt_onclick(\'/ooohmycarthk/home\',\'sub23\');"]')
+console.log(homeBtnEle)
 var homeBtnReplacement = document.createElement('div')
 homeBtnReplacement.innerHTML = '首頁'
 homeBtnReplacement.style.cursor = 'pointer'

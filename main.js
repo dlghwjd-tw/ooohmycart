@@ -1,5 +1,4 @@
 var bodyEle = document.body
-var webStatus = 'underMaintenance'
 
 // Maintenance Screen
 if (webStatus == 'underMaintenance') {

@@ -5,8 +5,8 @@ var webStatus
 if (webStatus == 'underMaintenance') {
     var maintenanceScreen = document.createElement('div')
     maintenanceScreen.style.position = 'fixed'
-    maintenanceScreen.style.height = '1vh'
-    maintenanceScreen.style.width = '1vw'
+    maintenanceScreen.style.height = '100vh'
+    maintenanceScreen.style.width = '100vw'
     maintenanceScreen.style.textAlign = 'center'
     maintenanceScreen.style.background = '#FFFFFF'
     maintenanceScreen.innerHTML = '網站維護中...'

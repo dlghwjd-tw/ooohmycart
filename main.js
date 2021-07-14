@@ -4,7 +4,8 @@ var webStatus = 'underMaintenance'
 // Maintenance Screen
 if (webStatus == 'underMaintenance') {
     var maintenanceScreen = document.createElement('div')
-    maintenanceScreen.style.position = 'fixed'
+    maintenanceScreen.style.zIndex = '1'
+    maintenanceScreen.style.position = 'absolute'
     maintenanceScreen.style.height = '100vh'
     maintenanceScreen.style.width = '100vw'
     maintenanceScreen.style.textAlign = 'center'

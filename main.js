@@ -1,6 +1,5 @@
-var bodyEle = document.body
-
 // Maintenance Screen
+var bodyEle = document.body
 if (webStatus == 'underMaintenance') {
     var maintenanceScreen = document.createElement('div')
     maintenanceScreen.style.zIndex = '100'
@@ -16,14 +15,19 @@ if (webStatus == 'underMaintenance') {
 }
 
 // Adjust menu buttons
-var homeBtnEle = document.querySelector('[onclick="bt_onclick(\'/ooohmycarthk/home\',\'sub23\');"]')
-var homeBtnReplacement = document.createElement('div')
-homeBtnReplacement.innerHTML = '首頁'
-homeBtnReplacement.style.fontSize = '24px'
-homeBtnReplacement.style.cursor = 'pointer'
-homeBtnReplacement.style.margin = '0 10px 0 230px'
-homeBtnReplacement.style.padding = '3px'
-homeBtnReplacement.style.border = '3px solid'
-homeBtnReplacement.style.borderRadius = '10px'
-homeBtnReplacement.onclick = 'bt_onclick(\'/ooohmycarthk/home\',\'sub23\');'
-homeBtnEle.parentNode.append(homeBtnReplacement)
+var mainWidthEle = document.getElementById('main_width')
+var bannerEle = document.querySelector('[src=\'https://img4.shop2000.com.tw/110915/236250/banner.jpg\']')
+var bannerHeight = bannerEle.clientHeight
+bannerEle.style.display = 'none'
+var container = document.createElement('div')
+container.style.height = '350px'
+container.style.textAlign = 'center'
+container.style.overflow = 'hidden'
+var banner = document.createElement('img')
+banner.style.position = 'relative'
+banner.style.margin = '0 auto'
+var bannerDisplacement = (bannerHeight - 350) / 2
+banner.style.top = `-${bannerDisplacement}px`
+banner.src = 'https://img4.shop2000.com.tw/110915/236250/banner.jpg'
+mainWidthEle.insertBefore(container, bannerEle)
+container.append(banner)

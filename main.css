@@ -1,3 +1,4 @@
-body {
-background: none;
+#main_width {
+    width: 100vw;
+    margin: 0;
 }

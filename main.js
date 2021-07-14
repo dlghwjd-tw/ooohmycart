@@ -6,6 +6,7 @@ if (webStatus == 'underMaintenance') {
     var maintenanceScreen = document.createElement('div')
     maintenanceScreen.style.zIndex = '100'
     maintenanceScreen.style.position = 'fixed'
+    maintenanceScreen.style.display = 'block'
     maintenanceScreen.style.fontSize = '100px'
     maintenanceScreen.style.height = '100vh'
     maintenanceScreen.style.width = '100vw'
@@ -17,9 +18,9 @@ if (webStatus == 'underMaintenance') {
 
 // Adjust menu buttons
 var homeBtnEle = document.querySelector('[onclick="bt_onclick(\'/ooohmycarthk/home\',\'sub23\');"]')
-console.log(homeBtnEle)
 var homeBtnReplacement = document.createElement('div')
 homeBtnReplacement.innerHTML = '首頁'
+homeBtnReplacement.style.fontSize = '30px'
 homeBtnReplacement.style.cursor = 'pointer'
 homeBtnReplacement.onclick = 'bt_onclick(\'/ooohmycarthk/home\',\'sub23\');'
 homeBtnEle.parentNode.append(homeBtnReplacement)

@@ -16,7 +16,7 @@ if (webStatus == 'underMaintenance') {
 
 // Adjust menu buttons
 var mainWidthEle = document.getElementById('main_width')
-var bannerEle = document.querySelector('[src=\'https://img4.shop2000.com.tw/110915/236444/banner.jpg\']')
+var bannerEle = document.querySelector('[src=\'https://img4.shop2000.com.tw/110915/236445/banner.jpg\']')
 var bannerHeight = bannerEle.clientHeight
 bannerEle.style.display = 'none'
 var container = document.createElement('div')
@@ -28,6 +28,6 @@ banner.style.position = 'relative'
 banner.style.margin = '0 auto'
 var bannerDisplacement = (bannerHeight - 350) / 2
 banner.style.top = `-${bannerDisplacement}px`
-banner.src = 'https://img4.shop2000.com.tw/110915/236444/banner.jpg'
+banner.src = 'https://img4.shop2000.com.tw/110915/236445/banner.jpg'
 mainWidthEle.insertBefore(container, bannerEle)
 container.append(banner)
